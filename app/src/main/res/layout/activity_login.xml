@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:src="@drawable/login"
+            android:id="@+id/banner"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="220dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView2"
+            android:text="Welcome Back to Female Daily Network"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/viewEmail"
+            android:background="#11000000"
+            android:hint=" email..."
+            android:drawableLeft="@drawable/email"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/viewPassword"
+            android:layout_gravity="center_horizontal"
+            android:background="#11000000"
+            android:hint=" password..."
+            android:drawableLeft="@drawable/password"
+            android:padding="10dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/button"
+        android:layout_below="@id/btnLogin"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/pink"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

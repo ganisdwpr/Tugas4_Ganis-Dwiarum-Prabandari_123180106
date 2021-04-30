@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".AnotherActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/negara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Highlighter"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/negara"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/babypink"/>
+
+</RelativeLayout>

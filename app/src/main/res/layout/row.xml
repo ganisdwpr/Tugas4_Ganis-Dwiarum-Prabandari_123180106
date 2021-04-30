@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/ListProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/highlighterImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:id="@+id/HighlighterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/highlighterImg"
+                android:textSize="18dp"
+                android:text="Jenis Highlighter"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/teal_700"/>
+
+            <TextView
+                android:id="@+id/detailHighlighter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HighlighterTitle"
+                android:text="Detail"
+                android:textSize="13sp"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/highlighterImg"
+                android:layout_toRightOf="@id/highlighterImg"
+                android:textColor="@color/babypink" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

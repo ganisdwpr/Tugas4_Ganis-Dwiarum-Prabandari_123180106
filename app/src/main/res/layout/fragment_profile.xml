@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@color/pinky" >
+
+    <RelativeLayout
+        android:id="@+id/cvProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/fd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="315dp"
+            android:gravity="center"
+            android:text="Welcome Back"
+            android:textColor="@color/teal_700"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textView"
+            android:textSize="20dp"
+            android:textColor="@color/babypink"
+            android:layout_marginTop="350dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="LOG OUT"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/btnLogout"
+        android:layout_below="@id/cvProfile"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/pink" >
+    </Button>
+
+
+</RelativeLayout>
